@@ -3,10 +3,11 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-   build: {
+  build: {
     rollupOptions: {
       external: ['@mui/icons-material/Github'],
     },
+  },
   plugins: [react()],
-  base: "/vite-deploy/"
+  base: "/vite-deploy/",
 })
